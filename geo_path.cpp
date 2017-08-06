@@ -32,3 +32,11 @@ double GeoPath::get_path_length() {
 double GeoPath::get_path_length(int i, int j) {
 	return distance_sums[j] - distance_sums[i];
 }
+
+double GeoPath::get_direct_distance() {
+	return radian_distance(coords.front(), coords.back());
+}
+
+double GeoPath::get_direct_distance(int i, int j) {
+	return radian_distance(coords[i], coords[j]);
+}

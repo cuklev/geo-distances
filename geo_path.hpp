@@ -24,6 +24,9 @@ class GeoPath {
 
 		double get_path_length();
 		double get_path_length(int, int);
+
+		double get_direct_distance();
+		double get_direct_distance(int, int);
 };
 
 #endif
