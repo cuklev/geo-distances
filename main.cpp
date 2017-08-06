@@ -1,3 +1,6 @@
+// Copyright (C) 2017, Kristiyan Tsaklev
+// See LICENSE
+
 #include "geo_coords.hpp"
 #include<iostream>
 
