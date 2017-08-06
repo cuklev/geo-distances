@@ -19,5 +19,7 @@ int main() {
 		points.push_back(p1);
 	}
 
-	std::cout << GeoPath(points).get_path_length() << '\n';
+	GeoPath path(points);
+	std::cout << path.get_path_length() << '\n';
+	std::cout << path.get_direct_distance() << '\n';
 }
