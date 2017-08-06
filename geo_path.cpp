@@ -7,7 +7,7 @@ void GeoPath::calc_distances() {
 	distance_sums.resize(coords.size());
 	distance_sums[0] = 0;
 	for(unsigned i = 1; i < coords.size(); ++i)
-		distance_sums[i] = radian_distance(coords[i - 1], coords[i]);
+		distance_sums[i] = distance_sums[i - 1] + radian_distance(coords[i - 1], coords[i]);
 }
 
 GeoPath::GeoPath()
